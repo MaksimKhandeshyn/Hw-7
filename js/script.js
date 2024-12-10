@@ -7,12 +7,30 @@ const arraySecond = ["One", "Two", "Three"];
 arraySecond[3] = "Four";
 console.log(arraySecond);
 // --3--
-let sums = [30, 4, 5, 10];
-
-for (let i = 0, sum = 0; i < sums.length; sum += sums[i++]) {
-  console.log(sum);
+const sumsArray = [30, 4, 5, 10];
+let sum = 0;
+for (let i = 0; i < sumsArray.length; i++) {
+  sum += sumsArray[i];
 }
-// let sumArr = [1, 2, 3];
-
-// for (var i = 0, sum = 0; i < sumArr.length; sum += sumArr[i++]);
-// console.log(sum);
+console.log(sum);
+// --4--
+const numArray = [34, 1, 45, 83, "Thats numbers", "No"];
+for (let i = 0; i < numArray.length; i++) {
+  console.log(numArray[i]);
+}
+// --5--
+const stringArray = ["Five", "Stringssss", "Hi", "Undefind"];
+for (let i = 0; i < stringArray.length; i++) {
+  if (stringArray[i].length > 5) {
+    console.log(stringArray[i]);
+  }
+}
+// --6--
+const numberArray = [54, 93, 100, 10, 15, 10000];
+let number = 0;
+for (let i = 0; i < numberArray.length; i++) {
+  numberArray[(number += 2)];
+  if (numberArray[i] > numberArray[number]) {
+    console.log(numberArray[i]);
+  }
+}
