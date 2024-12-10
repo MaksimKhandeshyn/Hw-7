@@ -26,11 +26,20 @@ for (let i = 0; i < stringArray.length; i++) {
   }
 }
 // --6--
-const numberArray = [54, 93, 100, 10, 15, 10000];
-let number = 0;
+const numberArray = [125, 93, 100, 101, 15, 131];
+let number = numberArray[0];
 for (let i = 0; i < numberArray.length; i++) {
-  numberArray[(number += 2)];
-  if (numberArray[i] > numberArray[number]) {
-    console.log(numberArray[i]);
+  if (numberArray[i] > number) {
+    number = numberArray[i];
+  }
+}
+console.log(number);
+//--7--
+const pairArray = [12, 31, 8, 9, 74, 3];
+for (let i = 0; i < pairArray.length; i++) {
+  if (pairArray[i] % 2 === 0) {
+    console.log(pairArray[i]);
+  } else {
+    continue;
   }
 }
